@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Grillone | Deep Tech Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: linear-gradient(90deg, #00ffae, #0077ff);
+      color: black;
+      text-shadow: 0 0 6px #000000;
+      box-shadow: inset 0 -5px 10px rgba(0, 255, 174, 0.4);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      margin: 20px;
+    }
+    .p {
+      
+      margin: 1rem;
+      padding-left: 1rem;
+      border: 1px solid lime;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 300px; /* or use `100vh` if full screen height */
+      }
+      
+
+      .one {
+        flex: 1;
+  min-width: 300px; /* optional: keeps layout from breaking too small */
+  margin: 0.5rem;
+  border: 2px solid lime;
+  background-color: transparent;
+  border-radius: 10px 10px 10px 10px;
+      }
+
+      .two {
+        flex: 1;
+  min-width: 300px; /* optional: keeps layout from breaking too small */
+  margin: 0.5rem;
+  border: 2px solid lime;
+  background-color: transparent;
+  border-radius: 10px 10px 10px 10px;
+      }
+
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #000;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    .hamburger-menu {
+  position: relative;
+  display: inline-block;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+}
+
+.hamburger-menu span {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+  background: #00ffae;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  box-shadow: 0 0 8px #00ffae;
+}
+
+.nav-links {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.3);
+  min-width: 160px;
+}
+
+.nav-links a {
+  color: #00ffae;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.hamburger-menu:hover .nav-links {
+  display: flex;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Anthony Grillone</h1>
+    <p> Tech Solutions| Sustainable Systems | Piezoelectric Innovator</p>
+    <div class="hamburger-menu">
+      <span>&#9776;</span>
+      <div class="nav-links">
+        <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/home.html">Home</a>
+        <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/elektric.html">E-leKtric</a>
+        <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/trEz.html">TrEz</a>
+        <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/RACs.html">RAC Processor</a>
+      </div>
+    </div>
+    </header>
+
+  <body>
+  <div class="blurb">
+    <h1>E-leKtric</h1>
+       <p>
+        &nbsp; &nbsp;E-leKtric is a system to transfer power through an air gap. Power 
+        is fed to an oscillator that vibrates at a frequency over a distance. 
+        The receiver is a grid of billions of nano piezo membrane stacks. 
+        The oscillations from the power from power grid are sent through the 
+        gap to the stacks and vibrates and we convert this to mechanical energy, 
+        piezo electric energy and  thermal from the membranes heating up if 
+        cooled properly. Billions of stacks equals billions of wires and we need
+        to get rid of that so take another grid of stacks of larger diameter and 
+        place it close by almost touching and step down the number of stacks with
+        bigger diameter, then step down again bigger diameter stacks until  we 
+        have smaller amounts for wiring convenience. This wire less wire system
+        will send signals through a gap using Acoustics and piezoelectricity 
+        hartvested from the vibrations picked up by membrane stacks.
+        </p>
+    </div>
+    <div class="wrapper">
+        <div class="one"></div>
+        <div class="two"></div>
+        </div>
+
+    
+    
+
+
+
+
+  </body>
+
+ 
+  <footer>
+    &copy; 2025 Anthony Grillone. All rights reserved.
+    <br><br>
+    <a href="www.linkedin.com/in/anthony-grillone" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle; filter: invert(63%) sepia(99%) saturate(290%) hue-rotate(151deg); margin-left: 10px;" />
+    </a>
+  </footer>
+</body>
+</html>

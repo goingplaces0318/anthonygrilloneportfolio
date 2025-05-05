@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Grillone | Deep Tech Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: linear-gradient(90deg, #00ffae, #0077ff);
+      color: black;
+      text-shadow: 0 0 6px #000000;
+      box-shadow: inset 0 -5px 10px rgba(0, 255, 174, 0.4);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      margin: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      flex: 1;
+    }
+
+    .project {
+      background-color: #111;
+      border-radius: 10px;
+      box-shadow: inset 0 0 10px #00ffae, 0 0 10px rgba(0, 255, 255, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      padding: 1rem
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-content {
+      padding: 1rem;
+    }
+
+    .project h2 {
+      color: #00ffae;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      color: #cccccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #000;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    .hamburger-menu {
+  position: relative;
+  display: inline-block;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+}
+
+.hamburger-menu span {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+  background: #00ffae;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  box-shadow: 0 0 8px #00ffae;
+}
+
+.nav-links {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.3);
+  min-width: 160px;
+}
+
+.nav-links a {
+  color: #00ffae;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.hamburger-menu:hover .nav-links {
+  display: flex;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Anthony Grillone</h1>
+    <p> Tech Solutions| Sustainable Systems | Piezoelectric Innovator</p>
+    <div class="hamburger-menu">
+      <span>&#9776;</span>
+      <div class="nav-links">
+        <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/home.html">Home</a>
+        <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/elektric.html">E-leKtric</a>
+        <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/trEz.html">TrEz</a>
+        <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/RACs.html">RAC Processor</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="projects">
+    <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/elektric.html" style="text-decoration: none; color: inherit;">
+    <div class="project">
+      <img src="/home/anthonyg/Downloads/piezoStack.png" alt="E-leKtric" />
+        <h2>E-leKtric</h2>
+        <p>Wireless energy transfer using stacked piezoelectric membranes and acoustic ladder coupling for air-gap power reception.</p>
+      </div>
+    </div></a>
+
+    <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/trEz.html" style="text-decoration: none; color: inherit;">
+    <div class="project">
+    <img src="/home/anthonyg/Downloads/trEz.png" alt="TrEz" />
+      <div class="project-content">
+        <h2>TrEz</h2>
+        <p>Piezoelectric tree-like system for harvesting ambient mechanical energy from wind and vibrations in natural or urban environments.</p>
+      </div>
+    </div></a>
+
+    <a href="/home/anthonyg/PORTFOLIO/PORTFOLIOhtml/RACs.html" style="text-decoration: none; color: inherit;">
+    <div class="project">
+      <img src="/home/anthonyg/Downloads/RACS.png" alt="RAC Processor" />
+      <div class="project-content">
+        <h2>RAC Processor</h2>
+        <p>Recursive Activation Computing mesh system using light patterns and entangled node architecture for ultra-parallel logic processing.</p>
+      </div>
+    </div>
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 Anthony Grillone. All rights reserved.
+<br><br>
+    <a href="www.linkedin.com/in/anthony-grillone" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle; filter: invert(63%) sepia(99%) saturate(290%) hue-rotate(151deg); margin-left: 10px;" />
+    </a>
+  </footer>
+</body>
+</html>
